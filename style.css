@@ -130,10 +130,14 @@ h1#site-title {
 		margin: 20px 0 0 0;
 	}
 	
+	#data h2 {
+		margin-left: 5px;
+		margin-bottom: 20px;
+	}
+	
 		h2 a {
 			text-decoration:none;
 			color: #222;
-			font-size: 15px;
 		}
 	
 .return {
@@ -262,3 +266,72 @@ iframe.facebook {
 	padding: 0;
 	margin: 0 0 0 0;
 }	
+
+#map h3 {
+	float:left;
+}
+
+.explore {
+	margin-top: 15px;
+	float: right;
+}
+
+	.explore a {
+		background:#fff;
+		text-decoration:none;
+		padding: 10px;
+		color: #0061a1;
+		font-weight:bold;
+	}
+
+
+#data {
+	width: 100%;
+	margin: 0 auto;
+}
+
+table {
+	border-collapse:collapse;
+	margin-bottom:15px;
+	}
+	
+	table td,
+	table th {
+		padding:5px;
+		font-size:11px;
+		border:1px solid #fff;
+		border-width:0 1px 1px 0;
+		}
+		
+	thead th {
+		background:#91c5d4;
+		}
+			
+		thead th[colspan],
+		thead th[rowspan] {
+			background:#66a9bd;
+			}
+		
+	tbody th,
+	tfoot th {
+		text-align:left;
+		background:#91c5d4;
+		}
+		
+	tbody td,
+	tfoot td {
+		background:#d5eaf0;
+		}
+		
+	tfoot th {
+		background:#b0cc7f;
+		}
+		
+	tfoot td {
+		background:#d7e1c5;
+		font-weight:bold;
+		}
+			
+	tbody tr.odd td { 
+		background:#bcd9e1;
+		}
