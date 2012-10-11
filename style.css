@@ -1,6 +1,7 @@
 /* @override 
 	http://map.sarawakreport.org/new/style.css
-	http://map.sarawakreport.org/style.css */
+	http://map.sarawakreport.org/style.css
+	http://map.localhost/style.css */
 
 /* RESET */
 
@@ -86,16 +87,14 @@ html {
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	background-color: #eff7f9;
 }
 
 .header {
 	width: 100%;
 	margin: 0;
+	overflow:hidden;
 	background:#94C9DC;
-	margin-bottom: 25px;
 	border-bottom: 4px solid #35a0d0;
 }
 
@@ -118,6 +117,7 @@ h1#site-title {
 		height: 50px;		
 		float: right;
 		padding: 10px 0;
+		margin: 0;
 	}
 
 	h2 {
@@ -167,44 +167,37 @@ h1#site-title {
 }	
 
 #map {
-	width: 1024px;
-	margin: 0 auto;
+	margin: 0 0 1em 0;
+	height: 600px;
+	padding: 0;
 }
 
-#map h2 {
-	font-weight:normal;
-	text-align:left;
-	margin: 10px 0;
-	float: left;
-}
-
-#map h3 {
+h3.related {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-family:"minion-pro",georgia;
 	font-weight:normal;
+	float: left;
 	font-size: 1.6em;
 }
 
-#map h3 a {
+h3.related a {
 	color: #0061a1;;
 	text-decoration:none;
 }
 
-	#map h3 a:hover {
+	h3.related a:hover {
 		color: #666;
 	}
 
-#map ul {
-}
 
-#map ul li {
+ul.stories li {
 	margin: 0 0 0.5em 0;
 	font-size: 0.8em;
 	color: #666;
 }
 
-#map ul li {
+ul.stories li {
 	font-size: 0.7em;
 	width: 29em;
 	border-radius:0.2;
@@ -216,14 +209,16 @@ h1#site-title {
 	min-height:5em;
 }
 
-#map ul li:nth-of-type(3n) {
+ul.stories li:nth-of-type(3n) {
 	margin-right:0;
 }
 
-#map ul li:hover {
+ul.stories li:hover {
+	background-color: #eff7f9;
+
 }
 
-#map ul li a {
+ul.stories li a {
 	line-height: 1.4em;
 	font-size: 1.2em;
 	font-weight:bold;
@@ -233,9 +228,14 @@ h1#site-title {
 	color: #000;
 }
 
-	#map ul li a:hover {
+	ul.stories ul li a:hover {
 		color: #0061a1;
 	}
+
+.share {
+	width: 100%;
+	float: left;
+}
 
 p.footer {
 	padding: 20px 0;
