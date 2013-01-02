@@ -25,9 +25,9 @@
 	<script type="text/javascript" src="http://use.typekit.com/xgd5qmy.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  
-	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.js'></script>
-	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css' rel='stylesheet' />
- 
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+   
 	<!-- iPhone & iPad --> 
 	<meta name="viewport" content="width=1024" /> 
   
@@ -36,17 +36,26 @@
 <body> 
 		
 <div class="header clearfix"> 
- 	<div class="frame">		
-		<h2>Mapping Taib&#8217;s Corruption</h2>
+
+	<h2>Mapping Taib&#8217;s Corruption</h2>
+	
+	<h1 id="site-title"> 
+		<a href="http://map.sarawakreport.org" title="Sarawak Report" rel="home"><span>Sarawak</span>Report</a> 
+	</h1> 
 		
-		<h1 id="site-title"> 
-			<a href="http://map.sarawakreport.org" title="Sarawak Report" rel="home">Sarawak Report</a> 
-		</h1> 
-		
-	</div>			
 </div> 
 
-<div id="map"></div>
+<div id="map">
+
+	<div class="legend">
+	
+		<div class="landgrabs"><span class="value"></span> Landgrabs</div>
+		<div class="dams"><span class="value"></span> Dams</div>
+		<div class="companies"><span class="value"></span> Companies</div>
+	
+	</div>
+
+</div>
 
 <div class="frame">
 
@@ -91,14 +100,12 @@
 				
 	</ul>
 
-	<p class="footer">If you have any comments, suggestions or have land grabs to report please contact us on <a href="mailto:mapping@sarawakreport.org">mapping@sarawakreport.org</a>. Designed in <a href="http://tilemill.com">TileMill</a>. Hosted on <a href="http://mapbox.com">Mapbox</a>. Last updated 1/3/2012</p>
+	<p class="footer">If you have any comments, suggestions or have land grabs to report please contact us on <a href="mailto:mapping@sarawakreport.org">mapping@sarawakreport.org</a>. Designed in <a href="http://tilemill.com">TileMill</a>. Hosted on <a href="http://mapbox.com">Mapbox</a>. Last updated 1/2/2013</p>
 
 </div><!-- /frame -->
 
 <script>
-    // If you're creating a new interactive layer, follow the tooltips docs:
-    // http://mapbox.com/tilemill/docs/crashcourse/tooltips/
-    mapbox.load('sarawak.map-yd8nhf3o', function(o) {
+    mapbox.load('goodcaesar.map-xf47b610', function(o) {
         var map = mapbox.map('map');
         map.addLayer(o.layer).zoom(8).center({ lat: 3.4036036638655527, lon: 113.46044784471603 });
 		//map.setExtent(new MM.Extent(80, -170, -70, 170));
@@ -107,7 +114,6 @@
 				
 		map.ui.zoomer.add();
 		map.setZoomRange(7, 12);
-
         map.interaction.auto();
     });
 </script>

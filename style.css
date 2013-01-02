@@ -92,10 +92,10 @@ body {
 
 .header {
 	width: 100%;
+	padding: 20px 0;
 	margin: 0;
 	overflow:hidden;
 	background:#94C9DC;
-	border-bottom: 4px solid #35a0d0;
 }
 
 .frame {
@@ -106,28 +106,33 @@ body {
 h1#site-title {
 	text-align:center;
 	display:block;
-	width: 100%;
+	font-size: 2.2em;
+	margin-right:0.5em;
+	padding:0;
+	font-weight:normal;
+	font-family: "adelle",sans-serif;
 }
 	
 	h1#site-title a {
-	background:url(http://www.sarawakreport.org/site/wp-content/themes/sarawak2/assets/sr-new-web-logo.gif) no-repeat center center;
-		width: 320px;
 		display:block;
-		text-indent:-10001px;
-		height: 50px;		
+		color: #fff;
 		float: right;
-		padding: 10px 0;
+		text-decoration:none;
+		padding:0;
 		margin: 0;
 	}
+	
+		h1#site-title a span {
+			color: #222;
+		}
 
 	h2 {
 		font-family:"minion-pro",georgia;
 		font-size: 2em;
 		float: left;
 		text-align:left;
-		text-align:right;
+		margin-left: 0.5em;
 		font-weight: normal;
-		margin: 20px 0 0 0;
 	}
 	
 	#data h2 {
@@ -170,7 +175,47 @@ h1#site-title {
 	margin: 0 0 1em 0;
 	height: 600px;
 	padding: 0;
+	position:relative;
 }
+
+.legend {
+	position:absolute;
+	bottom: 1em;
+	right: 1em;
+	z-index:100;
+	width: 140px;
+	color: #222;
+	border: 1px solid #fff;
+	font-size: 80%;
+	background:rgba(255,255,255,0.8);
+	border-radius:0.3em;
+}
+
+	.legend div {
+		margin: 0.5em;
+	}
+
+	.landgrabs span {
+		background-color: #d26852;
+	}
+	
+	.dams span {
+		background-color: #00bdf5;
+	}
+	
+	.companies span {
+		background-color: #e1e423;
+	}
+
+	.legend span.value {
+		width: 1em;
+		height: 1em;
+		display:block;
+		float: left;
+		margin-right:0.5em;
+		border-radius:1em;
+	}
+
 
 h3.related {
 	margin-top: 20px;
