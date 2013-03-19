@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<html dir="ltr" lang="en-US"> 
+<head> 
+<meta charset="UTF-8" /> 
+<title>Mapping Taib's Corruption | Sarawak Report</title> 
+
+  <link rel="stylesheet" type="text/css" media="all" href="style.css" /> 
+  
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--> 
+ 	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" /> 
+	<meta name="copyright" content="Sarawak Report" /> 
+	<meta name="MSSmartTagsPreventParsing" content="true" />  
+	<meta name="description" content="Mapping the extensive corruption of Taib Mahmud in Sarawak, Malaysia" /> 
+
+	<!-- DUBLIN CORE -->
+	<meta name="dc.creator" content="Sarawak Report" /> 
+	<meta name="dc.publisher" content="Sarawak Report" /> 
+  
+ 	<!-- JQUERY -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+
+	<script type="text/javascript" src="//use.typekit.net/naa0vdl.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ 
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<!-- iPhone & iPad --> 
+	<meta name="viewport" content="width=1024" /> 
+  
+</head> 
+ 
+<body> 
+
+<div class="header clearfix"> 
+
+	<h2>Mapping Taib&#8217;s Corruption</h2>
+
+	<h1 id="site-title"> 
+		<a href="http://map.sarawakreport.org" title="Sarawak Report" rel="home"><span>Sarawak</span>Report</a> 
+	</h1> 
+
+</div> 
+
+<div class="frame">
+
+<h1>Page not found</h1>
+
+<h2><a href="index.html">Explore the Map</a></h2>
+<h2><a href="data.html">See the raw data</a></h2>
+
+	<p class="footer">If you have any comments, suggestions or have land grabs to report please contact us on <a href="mailto:mapping@sarawakreport.org">mapping@sarawakreport.org</a>. Designed in <a href="http://tilemill.com">TileMill</a>. Hosted on <a href="http://mapbox.com">Mapbox</a>. Last updated 1/2/2013</p>
+
+</div><!-- /frame -->
+
+<script>
+    mapbox.load('goodcaesar.map-xf47b610', function(o) {
+        var map = mapbox.map('map');
+        map.addLayer(o.layer).zoom(8).center({ lat: 3.4036036638655527, lon: 113.46044784471603 });
+		//map.setExtent(new MM.Extent(80, -170, -70, 170));
+
+		//map.setPanLimits([{ lat: 4.439366682986005, lon: 109.33508163377854 }, { lat: 1.7079665250032263, lon: 116.88542708651578 }]);
+
+		map.ui.zoomer.add();
+		map.setZoomRange(7, 12);
+        map.interaction.auto();
+    });
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19709247-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body> 
+</html> 
