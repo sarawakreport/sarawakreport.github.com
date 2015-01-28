@@ -1,86 +1,3 @@
-/* @override 
-	http://map.sarawakreport.org/new/style.css
-	http://map.sarawakreport.org/style.css
-	http://map.localhost/style.css */
-
-/* RESET */
-
-/* v1.0 | 20080212 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-/* remember to define focus styles! */
-:focus {
-	outline: 0;
-}
-
-/* remember to highlight inserts somehow! */
-ins {
-	text-decoration: none;
-}
-del {
-	text-decoration: line-through;
-}
-
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix {
-	display: inline-block;
-}
- 
-html[xmlns] .clearfix {
-	display: block;
-}
- 
-* html .clearfix {
-	height: 1%;
-}
-
-/* CSS */
-
 html {
 	font-family:helvetica,arial,sans-serif;
 	height: 100%;
@@ -90,18 +7,10 @@ body {
 	background-color: #eff7f9;
 }
 
-.header {
-	width: 100%;
-	padding: 20px 0;
-	margin: 0;
-	overflow:hidden;
-	background:#94C9DC;
+header {
+	background:#94C9DC;	
 }
 
-.frame {
-	margin: 0 auto;
-	max-width: 1024px;
-}
 
 h1#site-title {
 	text-align:center;
@@ -121,17 +30,13 @@ h1#site-title {
 		padding:0;
 		margin: 0;
 	}
-	
-		h1#site-title a span {
-			color: #222;
-		}
 
 	h2 {
 		font-family:"minion-pro",georgia;
 		font-size: 2em;
 		float: left;
 		text-align:left;
-		margin-left: 0.5em;
+		margin-left: 1em;;
 		font-weight: normal;
 	}
 	
@@ -235,51 +140,20 @@ h3.related a {
 		color: #666;
 	}
 
-
-ul.stories li {
-	margin: 0 0 0.5em 0;
-	font-size: 0.8em;
-	color: #666;
-}
-
-ul.stories li {
-	font-size: 0.7em;
-	width: 29em;
-	border-radius:0.2;
-	display:block;
-	float: left;
-	margin: 0 1em 1em 0;
+.story {
 	padding: 0.5em;
 	background: #fff;
-	min-height:5em;
-}
-
-ul.stories li:nth-of-type(3n) {
-	margin-right:0;
-}
-
-ul.stories li:hover {
-	background-color: #eff7f9;
-
-}
-
-ul.stories li a {
-	line-height: 1.4em;
-	font-size: 1.2em;
-	font-weight:bold;
-	display:block;
-	margin: 0 0 0.5em 0;
-	text-decoration:none;
-	color: #000;
-}
-
-	ul.stories ul li a:hover {
-		color: #0061a1;
-	}
-
-.share {
-	width: 100%;
-	float: left;
+	min-height:12em;
+	margin: 0 0 1em 0;
+	
+	h3 {
+		font-size: 1.3em;
+		font-family:"minion-pro",georgia;
+		font-weight:normal;
+		a {
+			color: #222;
+		}
+	}	
 }
 
 p.footer {
